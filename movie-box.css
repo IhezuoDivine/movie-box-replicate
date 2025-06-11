@@ -5,6 +5,7 @@
   text-decoration: none;
   list-style: none;
   outline: none;
+  border: none;
 }
 :root {
   --main: grey;
@@ -81,6 +82,54 @@ header {
 .headernav ul li a {
   color: white;
 }
+.general {
+  width: 100%;
+  padding: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.general-div {
+  display: flex;
+  justify-content: space-around;
+  overflow-x: auto;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 15px;
+  animation: scrollX 16s steps(4) infinite;
+  min-width: calc(800px * 4);
+}
+.general-img {
+  height: 300px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+@keyframes scrollX {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-3200px);
+  }
+}
+.general-div-2 {
+  display: flex;
+  justify-content: space-between;
+  margin: -50px 5px 30px 5px;
+  padding: 0 15px;
+  font-size: 16px;
+  position: relative;
+  z-index: 5;
+}
+.general-div-2 button {
+  padding: 2px 15px;
+  border-radius: 10px;
+  background: rgb(51, 134, 88);
+  color: white;
+}
+.general-div-2 button:hover {
+  background-color: rgb(5, 73, 82);
+}
 
 footer {
   position: fixed;
@@ -105,7 +154,7 @@ footer {
 .footernav ul li a {
   display: block;
   color: white;
-  font-family: Georgia, 'Times New Roman';
+  font-family: Georgia, "Times New Roman";
 }
 .footernav ul li i {
   color: var(--main);
