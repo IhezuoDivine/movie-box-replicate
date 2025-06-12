@@ -130,7 +130,52 @@ header {
 .general-div-2 button:hover {
   background-color: rgb(5, 73, 82);
 }
-
+.week-top-20,
+.hot-action {
+  padding: 15px;
+  margin-top: -25px;
+  margin-top: 15px;
+}
+.week-top-20-more,
+.hot-action-more {
+  display: flex;
+  justify-content: space-between;
+}
+.week-top-20-more button,
+.hot-action-more button {
+  background-color: transparent;
+  color: white;
+  margin-right: 10px;
+}
+.week-top-20-more button:hover,
+.hot-action-more button:hover {
+  color: rgb(112, 110, 110);
+}
+.week-top-20-img-con,
+.hot-action-img-con {
+  overflow-x: auto;
+}
+.week-top-20-img-con ul,
+.hot-action-img-con ul {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+.week-top-20-img-con ul li,
+.hot-action-img-con ul li {
+  padding: 15px 5px;
+  flex: 0 0 auto;
+  width: auto;
+}
+.week-top-20-img-con img,
+.hot-action-img-con img {
+  height: 150px;
+  width: 100px;
+  object-fit: cover;
+}
 footer {
   position: fixed;
   display: block;
