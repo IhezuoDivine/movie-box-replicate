@@ -39,6 +39,7 @@ body {
   border-radius: 10px;
 }
 .main {
+  display: none;
   width: 100%;
   max-width: 800px;
 }
@@ -81,6 +82,9 @@ header {
 }
 .headernav ul li a {
   color: white;
+}
+.headernav ul li a:hover {
+  color: rgb(61, 107, 61);
 }
 .general {
   width: 100%;
@@ -133,30 +137,41 @@ header {
 .week-top-20,
 .hot-action {
   padding: 15px;
-  margin-top: -25px;
-  margin-top: 15px;
+  margin-top: 10px;
+}
+.anime18 {
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 60px;
 }
 .week-top-20-more,
-.hot-action-more {
+.hot-action-more,
+.anime18more {
   display: flex;
   justify-content: space-between;
 }
 .week-top-20-more button,
-.hot-action-more button {
+.hot-action-more button,
+.anime18more button {
   background-color: transparent;
   color: white;
   margin-right: 10px;
 }
 .week-top-20-more button:hover,
-.hot-action-more button:hover {
+.hot-action-more button:hover,
+.anime18more button:hover {
   color: rgb(112, 110, 110);
 }
 .week-top-20-img-con,
 .hot-action-img-con {
   overflow-x: auto;
 }
+.anime-18img-con {
+  overflow-x: auto;
+}
 .week-top-20-img-con ul,
-.hot-action-img-con ul {
+.hot-action-img-con ul,
+.anime-18img-con ul {
   display: flex;
   justify-content: flex-start;
   text-align: center;
@@ -165,15 +180,47 @@ header {
   list-style: none;
 }
 .week-top-20-img-con ul li,
-.hot-action-img-con ul li {
+.hot-action-img-con ul li,
+.anime-18img-con ul li {
   padding: 15px 5px;
   flex: 0 0 auto;
   width: auto;
 }
 .week-top-20-img-con img,
-.hot-action-img-con img {
+.hot-action-img-con img,
+.anime-18img-con img {
   height: 150px;
   width: 100px;
+  object-fit: cover;
+}
+.hollywood-stars,
+.k-stars {
+  margin-top: 15px;
+  padding: 15px;
+}
+.hollywood-stars-div,
+.k-stars-div {
+  overflow-x: auto;
+}
+.hollywood-stars-div ul,
+.k-stars-div ul {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+.hollywood-stars-div ul li,
+.k-stars-div ul li {
+  padding: 15px 5px;
+  flex: 0 0 auto;
+  width: auto;
+}
+.hollywood-stars-div img,
+.k-stars-div img {
+  height: 200px;
+  width: 200px;
   object-fit: cover;
 }
 footer {
@@ -185,10 +232,11 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  padding: 15px;
+  padding: 5px 15px 15px 15px;
   width: 100%;
   max-width: 800px;
   z-index: 100;
+  background-color: black;
 }
 .footernav ul {
   display: flex;
@@ -201,8 +249,14 @@ footer {
   color: white;
   font-family: Georgia, "Times New Roman";
 }
+.footernav ul li a:hover {
+  color: rgb(63, 143, 63);
+}
 .footernav ul li i {
   color: var(--main);
   display: block;
   padding-bottom: 5px;
+}
+.footernav ul li a i:hover {
+  color: rgb(63, 143, 63);
 }
