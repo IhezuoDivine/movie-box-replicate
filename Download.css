@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+}
+:root {
+  --main: grey;
+  --text-color: white;
+  --bg-color: black;
+}
+body {
+  background-color: black;
+  color: white;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  z-index: 100;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.headerdiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  color: white;
+  font-family: sans-serif;
+  align-self: center;
+}
+.headerdiv a {
+  color: white;
+}
+.headerdiv a:hover {
+  color: rgb(165, 162, 162);
+}
+.thesection {
+  margin-top: 100px;
+  background-color: rgb(20, 20, 20);
+  padding: 5px;
+}
+.thesection div {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  padding-left: 10px;
+}
+.thesection div small {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+}
+.blue {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: blue;
+}
+.green {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: green;
+}
+footer {
+  position: fixed;
+  display: none;
+  font-size: 15px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 5px 15px 15px 15px;
+  width: 100%;
+  max-width: 800px;
+  z-index: 100;
+  background-color: rgb(19, 18, 18);
+}
+.footernav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding-bottom: 40px;
+  padding-top: 15px;
+}
+.forcheck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: white;
+}
+#checkbox {
+  appearance: none; /* Remove default look */
+  width: 20px;
+  height: 20px;
+  border: 2px solid hsl(0, 0%, 60%);
+  border-radius: 50%;
+  background-color: rgb(5, 5, 5);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+#checkbox:checked {
+  background-color: hsl(210, 100%, 50%);
+  border-color: hsl(210, 100%, 40%);
+}
+
+#checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+#Delete {
+  color: rgb(226, 222, 222);
+  background-color: rgb(99, 17, 17);
+  padding: 4px 15px;
+  border-radius: 50px;
+}
+#Delete:hover {
+  background-color: rgb(126, 33, 33);
+}

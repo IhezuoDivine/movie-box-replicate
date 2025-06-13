@@ -79,7 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
       main1.style.display = "block";
       main2.style.display = "none";
       register.style.display = "none";
-      
     }, 1000);
   });
 
@@ -129,5 +128,20 @@ document.addEventListener("DOMContentLoaded", () => {
     login.style.display = "none";
     main1.style.display = "none";
     main2.style.display = "block";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const edit = document.getElementById("edit");
+  const footer = document.getElementById("footer");
+  const Delete = document.getElementById("Delete");
+
+  edit.addEventListener("click", function (e) {
+    e.preventDefault();
+    footer.style.display = "block";
+  });
+  Delete.addEventListener("click", function (e) {
+    e.preventDefault();
+    footer.style.display = "none";
   });
 });

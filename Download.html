@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Download.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="headerdiv">
+        <a
+          href="movie-box.html"
+          onclick="return !window.location.href.includes('movie-box.html');"
+          ><span class="back"><i class="fas fa-arrow-left"></i></span
+        ></a>
+        <h3>Download</h3>
+        <p><a href="" id="edit">Edit</a></p>
+      </div>
+    </header>
+
+    <section class="thesection" id="thesection1">
+      <div>
+        <small>
+          <small class="blue"></small>
+          <p>Total space 127.39 GB</p>
+        </small>
+        <small>
+          <small class="green"></small>
+          <p>127.39 GB remaining</p>
+        </small>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <nav class="footernav">
+        <ul>
+          <li>
+            <a href="" class="forcheck">
+              <input type="checkbox" name="" id="checkbox" />
+              <label for="checkbox">select all</label>
+            </a>
+          </li>
+          <li>
+            <a href="-" id="Delete">Delete</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="movie-box.js"></script>
+  </body>
+</html>
